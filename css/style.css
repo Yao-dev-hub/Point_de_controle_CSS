@@ -1,0 +1,613 @@
+/* Réinitialisation des margin et des padding */
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* stylisation du header */
+header {
+    border : 1px solid black;
+    background-color: rgb(11, 4, 4);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+
+/* stylisation des li dans le ul*/
+
+ul li{
+    display :flex;
+    margin-left: 50px;
+    font-size: 1.5em;
+    list-style-type: none;
+}
+
+/* stylisation des a dans le li*/
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Ajout de durée de transition de 1s au menu*/
+ul li a:hover{
+    color: orange;
+    transition: 1s;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/* stylisation du container dans le header */
+
+.container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 80%;
+    height: 60px;
+    padding: 12px;
+}
+
+
+/* stylisation du logo */
+.container .logo {
+    margin-right: 40px;
+    font-size: 25px;
+}
+
+.container .logo a{
+    margin-right: 40px;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+
+}
+
+/* stylisatiion du navbar dans container */
+.container .navbar {
+    margin-left: 30px;
+}
+
+/* stylisation du ul dans le .container */
+
+.navbar ul {
+    display :flex;
+
+}
+
+
+
+/* stylisation du span */
+.bleu {
+    color: blue;
+}
+
+/* *** partie banniere *** */
+
+#banniere {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500px;
+    border : 1px solid black;
+    padding: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.17),rgba(4, 4, 4, 0.247)),url(images/banniere.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#banniere .container {
+    border : 1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly ;
+    height: 420px;
+    width:40%;
+    background-color: rgba(13, 13, 56, 0.867);
+    box-shadow: 1px 1px 1px white;
+    border-radius: 10px;
+    padding: 20px;
+
+} 
+
+#banniere .container .para {
+    height: 20px;
+    width: 600px;
+    color : green;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+
+#banniere .para p {
+    font-size: 23px;
+}
+
+#banniere .container .titre {
+    height: 20px;
+    width: 600px;
+    text-shadow: 1px 1px 1px black;
+    color : white;
+    display: flex;
+    justify-content: left;
+}
+
+#banniere .container .btn button {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: orange;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border: none;
+}
+
+.container .btn button a {
+    text-decoration: none;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+    color: aliceblue;
+}
+
+
+/* *** partie a propos *** */
+#about-me {
+    display: flex;
+    height: 500px;
+    border : 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(252, 202, 116, 0.229);
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* *** sylisation du bloc left situé à gauche de la section à propos *** */
+#about-me .left{
+    height: 400px;
+    background-image: url(images/dev2.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border : 1px solid rgba(0, 0, 0, 0);
+    width: 520px;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* *** sylisation du bloc right situé à droite de la section à propos *** */
+#about-me .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    height: 400px;
+    border : 1px solid rgba(0, 0, 0, 0);
+    width:900px;
+    background-color: rgba(0, 0, 0, 0.162);
+}
+
+/* *** sylisation du  bloc para contenant les pragraphes *** */
+
+#about-me .right .para  {
+    display: flex;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.827);
+
+}
+
+/* ***sylisation des paragraphes se situant dans le bloc para dans à propos*** */
+#about-me .right .para  p{
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* *** sylisation du bloc sous-titre  contenant le titre de la section a propos à gauche*** */
+#about-me .right .sous-titre {
+    display: flex;
+    height: 70px;
+    margin-bottom: 15px;
+    border : 1px solid rgba(0, 0, 0, 0);
+}
+
+
+/* *** sylisation du container .sous-right *** */
+#about-me .right .sous-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border : 1px solid rgba(0, 0, 0, 0);
+    height: 250px;
+    align-items: center;
+    width: 100%;
+}
+/* *** sylisation du container .sous-left *** */
+#about-me .right .sous-container .sous-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border : 1px solid rgba(0, 0, 0, 0);
+    height: 150px;
+    
+}
+
+/* *** sylisation du container .sous-right *** */
+#about-me .right .sous-container .sous-left .btn button {
+    margin-top: 2px;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: rgb(255, 179, 0);
+    box-shadow: 1px 1px 1px black;
+
+}
+
+/* *** sylisation du a contenu dans le bouton de a propos *** */
+#about-me .right .sous-container .sous-left .btn button a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* *** sylisation du container .sous-right *** */
+#about-me .right .sous-container .sous-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    border : 1px solid rgba(0, 0, 0, 0);
+    height: 150px;
+}
+
+/* *** partie travail *** */
+
+#travail {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.525);
+}
+
+/* *** Ajout de titre et sylisation du titre de niveau 2*** */
+
+#travail .titre h2 {
+    font-size: 40px;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* *** sylisation du bloc-container-travail1 *** */
+
+#travail #container-travail1 {
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/* *** sylisation du bloc-container-travail2 *** */
+
+#travail #container-travail2 {
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/* *** Ajout d'image en fond et stylisation *** */
+
+#travail .sous-container {
+    width: 400px;
+    border: 1px solid rgb(0, 0, 0);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.522),rgba(4, 4, 4, 0.247)),url(images/dev-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+}
+
+.sous-container .titre3 {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: aquamarine;
+
+}
+
+/* *** partie du CV *** */
+#cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    background-color: rgba(12, 7, 42, 0.636);
+}
+
+/* *** sylisation du bloc titre contenant le itre de la section cv *** */
+.container .titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* *** sylisation du titre de la secion cv *** */
+#cv .titre h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* *** sylisation du bloc para de la secion cv contenant les paragraphes  *** */
+#cv .container .para {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 95px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+
+/* *** sylisation des paragraphes de la secion cv *** */
+#cv .container .para p{
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/* *** sylisation du bouton de la secion cv *** */
+#cv .container .btn button {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: orange;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* *** sylisation du lien contenu dans le bouton de la secion cv *** */
+#cv .container .btn button a {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+/* *** partie du Contact *** */
+
+#contact {
+    padding: 40px;
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.649),rgba(25, 19, 19, 0.507)),url(images/ban3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#contact .titre {
+    font-size: 25px;
+    text-shadow: 1px 1px 1px black;
+    color: orange;
+    font-weight: bold;
+}
+
+#contact .formulaire form {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    width: 100%;
+}
+
+#contact .formulaire form .container .left{
+    margin: 20px;
+    background-color: rgba(99, 99, 169, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    padding: 10px;
+
+}
+
+.left > label {
+    font-size: 25px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+label + input {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    width: 300px;
+    height: 60px;
+}
+
+
+#contact .formulaire form .container .right{
+    margin: 20px;
+    background-color: rgba(99, 99, 169, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    padding: 10px;
+}
+
+
+
+label textarea {
+    margin-top: 20px;
+}
+
+.right label {
+    font-size: 25px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+input,textarea{
+    font-size: 18px;
+}
+
+.btn > input {
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    height: 60px;
+    background-color: red;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/* *** partie du hobby *** */
+
+#hobbies {
+    display: flex;
+    height: 600px;
+    background-color: rgba(26, 17, 83, 0.24);
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+#hobbies .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+    height: 400px;
+}
+
+#hobbies .left .para{
+    background-color: rgb(191, 191, 191);
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(92, 96, 96, 0.432);
+    padding: 10px;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+#hobbies .left .video{
+
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+}
+
+#hobbies .right{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: space-between;
+    height: 400px;
+}
+
+
+#hobbies .right .para{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(92, 96, 96, 0.432);
+    padding: 10px;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+
+
+/* *** partie du hobby *** */
+
+footer {
+    display: flex;
+    height: 400px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer .left {
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    height: 200px;
+    font-size: 20px;
+}
+
+footer .left .numero p {
+    font-weight: bold;
+}
+
+footer .right {
+    display: flex;
+    margin-right: 60px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    height: 200px;
+}
+
+
+footer .right .titre {
+    margin: 0 auto;
+}
+
+footer .right .titre  h3{
+    font-size: 20px;
+    color: blue;
+}
+
+footer .right .lien ul li a{
+    font-size: 25px;
+    color: orange;
+}
